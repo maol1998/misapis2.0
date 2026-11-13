@@ -1,6 +1,1 @@
-import 'dotenv/config';
-import Server from './server/server.js';
-import 'colors';
-
-const server = new Server();
-server.listen();
+import './server.js';

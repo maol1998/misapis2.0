@@ -1,21 +1,3 @@
-import { Router } from 'express';
-import {
-    getAllEjemplos,
-    getEjemploById,
-    postEjemplo,
-    putEjemplo,
-    deleteEjemplo,
-} from '../controllers/ejemplo.controller.js';
-const ejemplo = Router();
+import mariscosRoutes from './mariscos.routes.js';
 
-ejemplo.get('/', getAllEjemplos);
-
-ejemplo.get('/:id', getEjemploById);
-
-ejemplo.put('/:id', putEjemplo);
-
-ejemplo.post('/', postEjemplo);
-
-
-ejemplo.delete('/:id',deleteEjemplo);
-export default ejemplo;
+export default mariscosRoutes;
